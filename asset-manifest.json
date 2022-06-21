@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mesc-tournament-2022/static/css/main.4567743c.css",
-    "main.js": "/mesc-tournament-2022/static/js/main.115a467e.js",
+    "main.js": "/mesc-tournament-2022/static/js/main.d99a4fbd.js",
     "static/js/787.c4e7f8f9.chunk.js": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/mesc-tournament-2022/index.html",
     "main.4567743c.css.map": "/mesc-tournament-2022/static/css/main.4567743c.css.map",
-    "main.115a467e.js.map": "/mesc-tournament-2022/static/js/main.115a467e.js.map",
+    "main.d99a4fbd.js.map": "/mesc-tournament-2022/static/js/main.d99a4fbd.js.map",
     "787.c4e7f8f9.chunk.js.map": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4567743c.css",
-    "static/js/main.115a467e.js"
+    "static/js/main.d99a4fbd.js"
   ]
 }
