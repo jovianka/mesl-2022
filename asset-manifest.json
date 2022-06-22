@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mesc-tournament-2022/static/css/main.4567743c.css",
-    "main.js": "/mesc-tournament-2022/static/js/main.d99a4fbd.js",
+    "main.css": "/mesc-tournament-2022/static/css/main.66cb6432.css",
+    "main.js": "/mesc-tournament-2022/static/js/main.f82aee5a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/mesc-tournament-2022/index.html",
-    "main.4567743c.css.map": "/mesc-tournament-2022/static/css/main.4567743c.css.map",
-    "main.d99a4fbd.js.map": "/mesc-tournament-2022/static/js/main.d99a4fbd.js.map",
+    "main.66cb6432.css.map": "/mesc-tournament-2022/static/css/main.66cb6432.css.map",
+    "main.f82aee5a.js.map": "/mesc-tournament-2022/static/js/main.f82aee5a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4567743c.css",
-    "static/js/main.d99a4fbd.js"
+    "static/css/main.66cb6432.css",
+    "static/js/main.f82aee5a.js"
   ]
 }
