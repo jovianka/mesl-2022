@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -10,20 +11,26 @@ export default function NavigationBar() {
 
   useEffect(() => {
     setNavLinkState(`${({ isActive }: {isActive: any}) => isActive ? "active" : ""}`);
-  }, [navLinkState])
+  }, [navLinkState]);
   
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" >
+    <Navbar bg="dark" variant="dark" expand="sm" className="sticky-top border-bottom border-secondary" >
       <Container>
-        <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>
-          <img src="mesl-icon.png" alt="MESL Logo" width={48} height={48} />
+        <Navbar.Brand>
+          <img src="mesl-icon.png" alt="MESL Logo" width={48} height={46.81} className="me-3" />
+          <Navbar.Text className="text-light fw-bold">MESL</Navbar.Text>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={ NavLink } to="/registration" className={ navLinkState }>Registration</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ms-auto align-items-center">
+            <Nav.Link as={ NavLink } to="/" className={ navLinkState }>Home</Nav.Link>
+            <Nav.Link as={ NavLink } to="/tournaments" className={ navLinkState }>Tournaments</Nav.Link>
+            <Nav.Link as={ NavLink } to="/registration" className={ navLinkState }>
+              <Button variant="accent-1">
+                Registration
+              </Button>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
