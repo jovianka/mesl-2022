@@ -20,7 +20,7 @@ export default function NavigationBar() {
       <Container>
         <Navbar.Brand>
           <img src={MESLIcon} alt="MESL Logo" className="me-3" />
-          <Navbar.Text className="text-light fw-bold">MESL</Navbar.Text>
+          <Navbar.Text className="text-light fw-bold">MESL 2022</Navbar.Text>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
