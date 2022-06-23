@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-import MESLIcon from '../images/mesl-icon.webp';
+import MESLIcon from '../images/mesl-logo.webp';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -19,7 +19,7 @@ export default function NavigationBar() {
     <Navbar bg="dark" variant="dark" expand="sm" className="sticky-top border-bottom border-secondary" >
       <Container>
         <Navbar.Brand>
-          <img src={MESLIcon} alt="MESL Logo" className="me-3" />
+          <img src={MESLIcon} alt="MESL Logo" style={{width:"48px", height:"48px"}} className="me-3" />
           <Navbar.Text className="text-light fw-bold">MESL 2022</Navbar.Text>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
