@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/mesc-tournament-2022/static/css/main.66cb6432.css",
-    "main.js": "/mesc-tournament-2022/static/js/main.f82aee5a.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js",
-    "index.html": "/mesc-tournament-2022/index.html",
-    "main.66cb6432.css.map": "/mesc-tournament-2022/static/css/main.66cb6432.css.map",
-    "main.f82aee5a.js.map": "/mesc-tournament-2022/static/js/main.f82aee5a.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/mesc-tournament-2022/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.66cb6432.css",
+    "main.js": "/static/js/main.7a1aaef0.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/mesl-icon.webp": "/static/media/mesl-icon.4272ce95df75221ce934.webp",
+    "index.html": "/index.html",
+    "main.66cb6432.css.map": "/static/css/main.66cb6432.css.map",
+    "main.7a1aaef0.js.map": "/static/js/main.7a1aaef0.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66cb6432.css",
-    "static/js/main.f82aee5a.js"
+    "static/js/main.7a1aaef0.js"
   ]
 }
