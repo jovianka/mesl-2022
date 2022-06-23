@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jovianka.github.io/mesc-tournament-2022",
+  "homepage": "https://mesl-2022.web.app/",
   "overrides": {
     "autoprefixer": "10.4.5"
   },
