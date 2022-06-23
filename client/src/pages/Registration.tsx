@@ -1,7 +1,7 @@
 export default function Registration() {
   return (
     <div className="Registration text-center">
-      COMING SOON!
+      <h1>COMING SOON!</h1>
     </div> 
   )
 }
