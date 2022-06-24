@@ -2,3 +2,7 @@ h1, h2, h3, h4, h5, h6, .NavigationBar {
   font-family: 'Jura', sans-serif;
   font-weight: Bold;
 }
+
+ul li:not(:nth-last-child(1)) {
+  padding-bottom: $spacer;
+}
