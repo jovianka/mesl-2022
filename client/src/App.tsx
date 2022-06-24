@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home';
 import Registration from './pages/Registration';
-import Tournaments from './pages/Tournaments';
+import Info from './pages/Info';
 import NavigationBar from './components/NavigationBar';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration/>} />
-        <Route path="/tournaments" element={<Tournaments />} />
+        <Route path="/info" element={<Info />} />
       </Routes>
     </div>
   );
