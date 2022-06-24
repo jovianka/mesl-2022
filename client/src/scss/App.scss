@@ -1,5 +1,6 @@
-@import "bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+@import "bootstrap/scss/functions";
 
 $primary:       #141414;
 $secondary:     #ebebeb ;
@@ -10,13 +11,63 @@ $danger:        red ;
 $light:         #f1f1f1 ;
 $dark:          #141414 ;
 $body-bg:         $dark;
+$body-color:      rgba(255, 255, 255, .60);
 
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
 
 $custom-colors: (
   "accent": #A43535,
 );
 
+$custom-opacity: (
+  "opacity": (
+    property: opacity,
+    values: (
+      45: .45,
+      60: .60,
+      82: .82
+    ),
+  )
+);
+
+$custom-text-opacity: (
+  "text-opacity": (
+    css-var: true,
+    class: text-opacity,
+    values: (
+      45: .45,
+      60: .60,
+      82: .82,
+      100: 1
+    )
+  )
+);
+
+$custom-border-opacity: (
+  "border-opacity": (
+    css-var: true,
+    class: border-opacity,
+    values: (
+      10: .1,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  )
+);
+
+$utilities: map-merge($utilities, $custom-opacity);
+$utilities: map-merge($utilities, $custom-border-opacity);
+$utilities: map-merge($utilities, $custom-text-opacity);
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap/scss/bootstrap";
+
+h1, h2, h3, h4, h5, h6, .NavigationBar {
+  font-family: 'Jura', sans-serif;
+  font-weight: Bold;
+  color: rgba(255, 255, 255, .82);
+}
