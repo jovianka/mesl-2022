@@ -1,18 +1,15 @@
+// START OF BOOTSTRAP CUSTOMIZATIONS
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
 @import "bootstrap/scss/functions";
 
 $primary:       #141414;
 $secondary:     #ebebeb ;
-$success:       green ;
-$info:          cyan ;
-$warning:       yellow ;
-$danger:        red ;
-$light:         #f1f1f1 ;
+$light:         #ebebeb ;
 $dark:          #141414 ;
 $body-bg:         $dark;
 $body-color:      rgba(255, 255, 255, .60);
-$border-color: rgba(255, 255, 255, .1);
+$border-color:    rgba(255, 255, 255, .1);
 
 @import "bootstrap/scss/variables";
 
@@ -51,15 +48,12 @@ $custom-text-opacity: (
   )
 );
 
-$utilities: map-merge($utilities, $custom-opacity);
 $utilities: map-merge($utilities, $custom-text-opacity);
-
+$utilities: map-merge($utilities, $custom-opacity);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap/scss/bootstrap";
 
-h1, h2, h3, h4, h5, h6, .NavigationBar {
-  font-family: 'Jura', sans-serif;
-  font-weight: Bold;
-  color: rgba(255, 255, 255, .82);
-}
+// END OF BOOTSTRAP CUSTOMIZATIONS
+
+@import "_globals";
