@@ -16,7 +16,7 @@ export default function Registration() {
         <Row className="justify-content-center py-5">
           <Col sm="10">
             <Card body border="secondary" bg="dark" text="light">
-              <Button className="border-bottom w-100" onClick={() => setOpen(!collapseAturanPendaftaran)}>
+              <Button className="w-100" onClick={() => setOpen(!collapseAturanPendaftaran)}>
                 <Card.Header className="d-flex justify-content-center align-items-center">
                   <h1 className="opacity-82 text-center">Aturan Pendaftaran</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
@@ -26,7 +26,7 @@ export default function Registration() {
               </Button>
               <Collapse in={collapseAturanPendaftaran}>
                 <div id="collapseAturanPendaftaran">
-                  <Card.Body className="opacity-60">
+                  <Card.Body className="border-top opacity-60">
                     <ul>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
