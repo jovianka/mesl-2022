@@ -2,7 +2,7 @@
 
 
 $primary:       #141414;
-$secondary:     #780D0D ;
+$secondary:     #ebebeb ;
 $success:       green ;
 $info:          cyan ;
 $warning:       yellow ;
@@ -10,13 +10,11 @@ $danger:        red ;
 $light:         #f1f1f1 ;
 $dark:          #141414 ;
 $body-bg:         $dark;
-$body-color:      $light;
 
 @import "bootstrap/scss/variables";
 
 $custom-colors: (
-  "accent-1": #cd4646,
-  "accent-2": #F6C5C5,
+  "accent": #A43535,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
