@@ -16,7 +16,7 @@ export default function NavigationBar() {
   
 
   return (
-    <Navbar bg="dark" variant="dark" expand="sm" className="NavigationBar sticky-top border-bottom border-secondary">
+    <Navbar bg="dark" variant="dark" expand="sm" className="NavigationBar sticky-top shadow">
       <Container>
         <Navbar.Brand>
           <img src={MESLIcon} alt="MESL Logo" width="48" height="48" className="me-3" />

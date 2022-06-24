@@ -12,8 +12,15 @@ $light:         #f1f1f1 ;
 $dark:          #141414 ;
 $body-bg:         $dark;
 $body-color:      rgba(255, 255, 255, .60);
+$border-color: rgba(255, 255, 255, .1);
 
 @import "bootstrap/scss/variables";
+
+$box-shadow:                  0 0 1rem rgba($white, .15);
+$box-shadow-sm:               0 0 .25rem rgba($white, .075);
+$box-shadow-lg:               0 0 3rem rgba($white, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($white, .075);
+
 @import "bootstrap/scss/utilities";
 
 $custom-colors: (
@@ -44,22 +51,7 @@ $custom-text-opacity: (
   )
 );
 
-$custom-border-opacity: (
-  "border-opacity": (
-    css-var: true,
-    class: border-opacity,
-    values: (
-      10: .1,
-      25: .25,
-      50: .5,
-      75: .75,
-      100: 1,
-    )
-  )
-);
-
 $utilities: map-merge($utilities, $custom-opacity);
-$utilities: map-merge($utilities, $custom-border-opacity);
 $utilities: map-merge($utilities, $custom-text-opacity);
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
