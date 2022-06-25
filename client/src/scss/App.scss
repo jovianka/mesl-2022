@@ -17,12 +17,14 @@ $box-shadow:                  0 0 1rem rgba($white, .15);
 $box-shadow-sm:               0 0 .25rem rgba($white, .075);
 $box-shadow-lg:               0 0 3rem rgba($white, .175);
 $box-shadow-inset:            inset 0 1px 2px rgba($white, .075);
+$headings-color:              rgba(255, 255, 255, 0.82);
 
 @import "bootstrap/scss/utilities";
 
 $custom-colors: (
   "accent": #A43535,
 );
+
 
 $custom-opacity: (
   "opacity": (
