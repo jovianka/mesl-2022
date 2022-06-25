@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "gh-pages": "^4.0.0"
   }
 }
