@@ -1,0 +1,15 @@
+html {
+  scroll-padding-top: $spacer * 3
+}
+
+h1, h2, h3, h4, h5, h6, .NavigationBar {
+  font-family: 'Jura', sans-serif;
+}
+
+ul li:not(:nth-last-child(1)) {
+  padding-bottom: $spacer;
+}
+
+ol li:not(:nth-last-child(1)) {
+  padding-bottom: $spacer;
+}

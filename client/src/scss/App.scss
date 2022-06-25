@@ -1,24 +1,61 @@
+// START OF BOOTSTRAP CUSTOMIZATIONS
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
 @import "bootstrap/scss/functions";
 
-
 $primary:       #141414;
-$secondary:     #780D0D ;
-$success:       green ;
-$info:          cyan ;
-$warning:       yellow ;
-$danger:        red ;
-$light:         #f1f1f1 ;
+$secondary:     #ebebeb ;
+$light:         #ebebeb ;
 $dark:          #141414 ;
 $body-bg:         $dark;
-$body-color:      $light;
+$body-color:      rgba(255, 255, 255, .60);
+$border-color:    rgba(255, 255, 255, .1);
 
 @import "bootstrap/scss/variables";
 
+$box-shadow:                  0 0 1rem rgba($white, .15);
+$box-shadow-sm:               0 0 .25rem rgba($white, .075);
+$box-shadow-lg:               0 0 3rem rgba($white, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($white, .075);
+$headings-color:              rgba(255, 255, 255, 0.82);
+
+@import "bootstrap/scss/utilities";
+
 $custom-colors: (
-  "accent-1": #cd4646,
-  "accent-2": #F6C5C5,
+  "accent": #A43535,
 );
 
+
+$custom-opacity: (
+  "opacity": (
+    property: opacity,
+    values: (
+      45: .45,
+      60: .60,
+      82: .82
+    ),
+  )
+);
+
+$custom-text-opacity: (
+  "text-opacity": (
+    css-var: true,
+    class: text-opacity,
+    values: (
+      45: .45,
+      60: .60,
+      82: .82,
+      100: 1
+    )
+  )
+);
+
+$utilities: map-merge($utilities, $custom-text-opacity);
+$utilities: map-merge($utilities, $custom-opacity);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap/scss/bootstrap";
+
+// END OF BOOTSTRAP CUSTOMIZATIONS
+
+@import "_globals";
