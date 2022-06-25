@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Home from './pages/Home';
 import Registration from './pages/Registration';
 import Info from './pages/Info';
 import NavigationBar from './components/NavigationBar';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-function App() {  
+
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration : 1000,
+      disable: 'phone'
+    });
+  }, []);
+
   return (
     <div className="App">
       <NavigationBar />
