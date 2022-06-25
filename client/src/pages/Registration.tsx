@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
+import AOS from 'aos';
 
 import { useState } from 'react';
 
@@ -34,7 +35,11 @@ export default function Registration() {
         <Row className="justify-content-center py-5">
           <Col sm="10">
             <Card body border="secondary" bg="dark">
-              <Button className="w-100" onClick={() => setOpenCollapseAturanPendaftaran(!collapseAturanPendaftaran)}>
+              <Button className="w-100" onClick={() => {
+                setOpenCollapseAturanPendaftaran(!collapseAturanPendaftaran);
+                setTimeout(() => AOS.refresh(), 1000);
+              }
+            }>
                 <Card.Header className="d-flex justify-content-center align-items-center">
                   <h1 className="text-center">Aturan Pendaftaran</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
