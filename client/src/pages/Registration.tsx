@@ -64,7 +64,7 @@ export default function Registration() {
         {/* GAME BUTTONS */}
         <h1 className="text-center pt-5">Games</h1>
         <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center pt-4 pb-5">
-          <Col lg="2" data-aos="fade-up-right">
+          <Col lg="2" data-aos="fade-up">
             <Button variant="outline-accent bg-body w-100" as="a" href="#daftarValorant">
               <img src={ValorantLogo} alt="Valorant Logo" className="w-100" />
             </Button>
@@ -74,7 +74,7 @@ export default function Registration() {
               <img src={MLBBLogo} alt="MLBB Logo" className="w-100"/>
             </Button>
           </Col>
-          <Col lg="2" data-aos="fade-up-left">
+          <Col lg="2" data-aos="fade-up">
             <Button variant="outline-accent bg-body w-100 h-100" as="a" href="#daftarPUBGM">
               <img src={PUBGMLogo} alt="PUBGM Logo" className="w-100 h-100"/>
             </Button>
@@ -82,8 +82,8 @@ export default function Registration() {
         </Row>
         
         {/* FORM BUTTONS */}
-        <Row id="daftarValorant" className="pt-5 justify-content-center align-items-center vh-100">
-          <Col sm="6" className="mh-100">
+        <Row id="daftarValorant" className="py-5 justify-content-center align-items-center vh-100">
+          <Col sm="6" className="">
             <img src={ValorantArt} alt="" data-aos="fade" className="mw-100" />
           </Col>
           <Col sm="6">
@@ -94,8 +94,8 @@ export default function Registration() {
           </Col>
         </Row>
 
-        <Row id="daftarMLBB" className="justify-content-center align-items-center vh-100">
-          <Col sm="6" className="mh-100">
+        <Row id="daftarMLBB" className="py-5 justify-content-center align-items-center vh-100">
+          <Col sm="6" className="">
             <img src={Cecilion} alt="" data-aos="fade" className="mw-100" />
           </Col>
           <Col sm="6">
@@ -106,7 +106,7 @@ export default function Registration() {
           </Col>
         </Row>
 
-        <Row id="daftarPUBGM" className="justify-content-center align-items-center vh-100">
+        <Row id="daftarPUBGM" className="py-5 justify-content-center align-items-center vh-100">
           <Col sm="6" className="mh-100">
             <img src={PUBGLogo} alt="" data-aos="fade" className="mw-100" />
           </Col>
