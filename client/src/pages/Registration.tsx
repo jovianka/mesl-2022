@@ -4,22 +4,37 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import Modal from 'react-bootstrap/Modal';
+
 import { useState } from 'react';
+
 import MLBBLogo from '../images/mlbb-logo.webp';
-import PUBGMLogo from '../images/pubg-logo.webp';
 import ValorantLogo from '../images/valorant-logo.svg';
+import PUBGMLogo from '../images/pubgm-logo.svg';
+import Cecilion from '../images/Cecilion.webp';
+import ValorantArt from '../images/valorant-art.webp';
+import PUBGLogo from '../images/pubg-logo.webp';
+
 
 export default function Registration() {
 
-  const [collapseAturanPendaftaran, setOpen] = useState(true);
+  const [collapseAturanPendaftaran, setOpenCollapseAturanPendaftaran] = useState(true);
+
+  //Modal Pendaftaran
+  const [showValorantForm, setShowValorantForm] = useState(false);
+  const [showMLBBForm, setShowMLBBForm] = useState(false);
+  const [showPUBGMForm, setShowPUBGMForm] = useState(false);
+
 
   return (
     <div className="Registration">
       <Container>
+
+        {/* ATURAN PENDAFTARAN */}
         <Row className="justify-content-center py-5">
           <Col sm="10">
             <Card body border="secondary" bg="dark">
-              <Button className="w-100" onClick={() => setOpen(!collapseAturanPendaftaran)}>
+              <Button className="w-100" onClick={() => setOpenCollapseAturanPendaftaran(!collapseAturanPendaftaran)}>
                 <Card.Header className="d-flex justify-content-center align-items-center">
                   <h1 className="text-center">Aturan Pendaftaran</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
@@ -30,13 +45,13 @@ export default function Registration() {
               <Collapse in={collapseAturanPendaftaran}>
                 <div id="collapseAturanPendaftaran">
                   <Card.Body className="border-top">
-                    <ul>
+                    <ol>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores animi qui id beatae possimus architecto, odio sapiente, quasi tenetur consectetur alias illo. Non voluptates corporis pariatur, odio odit placeat.</li>
-                    </ul>
+                    </ol>
                   </Card.Body>
                 </div>
               </Collapse>
@@ -46,24 +61,106 @@ export default function Registration() {
 
         <hr />
 
+        {/* GAME BUTTONS */}
         <h1 className="text-center pt-5">Games</h1>
-        <Row className="row-cols-3 gy-3 justify-content-center py-5">
-          <Col sm="2">
-            <Button variant="outline-accent bg-body w-100" as="a" href="#daftarMLBB">
-              <img src={MLBBLogo} alt="" className="w-100"/>
-            </Button>
-          </Col>
-          <Col sm="2">
+        <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center pt-4 pb-5">
+          <Col lg="2" data-aos="fade-up-right">
             <Button variant="outline-accent bg-body w-100" as="a" href="#daftarValorant">
-              <img src={ValorantLogo} alt="" />
+              <img src={ValorantLogo} alt="Valorant Logo" className="w-100" />
             </Button>
           </Col>
-          <Col sm="2">
-            <Button variant="outline-accent bg-body w-100" as="a" href="#daftarPUBGM">
-              <img src={PUBGMLogo} alt="" className="w-100"/>
+          <Col lg="2" data-aos="fade-up">
+            <Button variant="outline-accent bg-body w-100" as="a" href="#daftarMLBB">
+              <img src={MLBBLogo} alt="MLBB Logo" className="w-100"/>
+            </Button>
+          </Col>
+          <Col lg="2" data-aos="fade-up-left">
+            <Button variant="outline-accent bg-body w-100 h-100" as="a" href="#daftarPUBGM">
+              <img src={PUBGMLogo} alt="PUBGM Logo" className="w-100 h-100"/>
             </Button>
           </Col>
         </Row>
+        
+        {/* FORM BUTTONS */}
+        <Row id="daftarValorant" className="pt-5 justify-content-center align-items-center vh-100">
+          <Col sm="6" className="mh-100">
+            <img src={ValorantArt} alt="" data-aos="fade" className="mw-100" />
+          </Col>
+          <Col sm="6">
+            <h1>Valorant</h1>
+            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
+            <Button variant="accent" size="lg" onClick={() => setShowValorantForm(true)}>Daftar</Button>
+          </Col>
+        </Row>
+
+        <Row id="daftarMLBB" className="justify-content-center align-items-center vh-100">
+          <Col sm="6" className="mh-100">
+            <img src={Cecilion} alt="" data-aos="fade" className="mw-100" />
+          </Col>
+          <Col sm="6">
+            <h1>Mobile Legends: Bang Bang</h1>
+            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+            <Button variant="accent" size="lg" onClick={() => setShowMLBBForm(true)}>Daftar</Button>
+          </Col>
+        </Row>
+
+        <Row id="daftarPUBGM" className="justify-content-center align-items-center vh-100">
+          <Col sm="6" className="mh-100">
+            <img src={PUBGLogo} alt="" data-aos="fade" className="mw-100" />
+          </Col>
+          <Col sm="6">
+            <h1>PUBG Mobile</h1>
+            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+            <Button variant="accent" size="lg" onClick={() => setShowPUBGMForm(true)}>Daftar</Button>
+          </Col>
+        </Row>
+
+        {/* FORM MODALS */}
+        {/* VALORANT */}
+      <Modal
+        fullscreen={true}
+        show={showValorantForm}
+        onHide={() => setShowValorantForm(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton className="border-bottom border-dark">
+          <h1 className="text-dark">Formulir Valorant</h1>
+        </Modal.Header>
+        <Modal.Body className="text-center">
+          <iframe title="ValorantForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
+        </Modal.Body>
+      </Modal>
+
+      <Modal
+        fullscreen={true}
+        show={showMLBBForm}
+        onHide={() => setShowMLBBForm(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton className="border-bottom border-dark">
+          <h1 className="text-dark">Formulir MLBB</h1>
+        </Modal.Header>
+        <Modal.Body className="text-center">
+          <iframe title="MLBBForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
+        </Modal.Body>
+      </Modal>
+
+      <Modal
+        fullscreen={true}
+        show={showPUBGMForm}
+        onHide={() => setShowPUBGMForm(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton className="border-bottom border-dark">
+          <h1 className="text-dark">Formulir PUBGM</h1>
+        </Modal.Header>
+        <Modal.Body className="text-center">
+          <iframe title="PUBGMForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
+        </Modal.Body>
+      </Modal>
 
       </Container>
     </div> 
