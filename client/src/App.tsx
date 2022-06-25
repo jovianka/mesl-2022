@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration : 1000,
-      disable: 'phone'
+      disable: 'mobile'
     });
   }, []);
 
