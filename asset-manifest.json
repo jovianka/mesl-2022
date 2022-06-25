@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.66cb6432.css",
-    "main.js": "/static/js/main.7a1aaef0.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/mesl-icon.webp": "/static/media/mesl-icon.4272ce95df75221ce934.webp",
-    "index.html": "/index.html",
-    "main.66cb6432.css.map": "/static/css/main.66cb6432.css.map",
-    "main.7a1aaef0.js.map": "/static/js/main.7a1aaef0.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/mesl-2022/static/css/main.776acea3.css",
+    "main.js": "/mesl-2022/static/js/main.a01b0926.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/mesl-2022/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/valorant-art.webp": "/mesl-2022/static/media/valorant-art.b023f3c66833fc854de8.webp",
+    "static/media/pubg-logo.webp": "/mesl-2022/static/media/pubg-logo.c693db0a8bfb1b2409ef.webp",
+    "static/media/Cecilion.webp": "/mesl-2022/static/media/Cecilion.e8f3db3372c46482ec79.webp",
+    "static/media/mesl-logo.webp": "/mesl-2022/static/media/mesl-logo.d609bbd2db391be1b35e.webp",
+    "static/media/pubgm-logo.svg": "/mesl-2022/static/media/pubgm-logo.554af49a579bf409e11675d9695d080e.svg",
+    "static/media/mlbb-logo.webp": "/mesl-2022/static/media/mlbb-logo.d25e65a8ce195e8c19df.webp",
+    "static/media/valorant-logo.svg": "/mesl-2022/static/media/valorant-logo.7628ca2ede33f5d3f4fbbf50f79e7205.svg",
+    "index.html": "/mesl-2022/index.html",
+    "main.776acea3.css.map": "/mesl-2022/static/css/main.776acea3.css.map",
+    "main.a01b0926.js.map": "/mesl-2022/static/js/main.a01b0926.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/mesl-2022/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66cb6432.css",
-    "static/js/main.7a1aaef0.js"
+    "static/css/main.776acea3.css",
+    "static/js/main.a01b0926.js"
   ]
 }
