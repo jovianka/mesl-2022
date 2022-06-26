@@ -10,6 +10,7 @@ $dark:          #141414 ;
 $body-bg:         $dark;
 $body-color:      rgba(255, 255, 255, .60);
 $border-color:    rgba(255, 255, 255, .1);
+$text-muted:      rgba(255, 255, 255, .45);
 
 @import "bootstrap/scss/variables";
 
@@ -37,20 +38,6 @@ $custom-opacity: (
   )
 );
 
-$custom-text-opacity: (
-  "text-opacity": (
-    css-var: true,
-    class: text-opacity,
-    values: (
-      45: .45,
-      60: .60,
-      82: .82,
-      100: 1
-    )
-  )
-);
-
-$utilities: map-merge($utilities, $custom-text-opacity);
 $utilities: map-merge($utilities, $custom-opacity);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
