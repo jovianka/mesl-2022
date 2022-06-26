@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 import MLBBLogo from '../images/mlbb-logo.webp';
 import ValorantLogo from '../images/valorant-logo.svg';
-import PUBGMLogo from '../images/pubgm-logo.svg';
+import PUBGMLogo from '../images/pubgm-logo.webp';
 import Cecilion from '../images/Cecilion.webp';
 import ValorantArt from '../images/valorant-art.webp';
 import PUBGLogo from '../images/pubg-logo.webp';
@@ -89,7 +89,7 @@ export default function Registration() {
         {/* FORM BUTTONS */}
         <Row id="daftarValorant" className="py-5 justify-content-center align-items-center vh-100">
           <Col sm="6" className="">
-            <img src={ValorantArt} alt="" data-aos="fade" className="mw-100" />
+            <img src={ValorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
           </Col>
           <Col sm="6">
             <h1>Valorant</h1>
@@ -101,7 +101,7 @@ export default function Registration() {
 
         <Row id="daftarMLBB" className="py-5 justify-content-center align-items-center vh-100">
           <Col sm="6" className="">
-            <img src={Cecilion} alt="" data-aos="fade" className="mw-100" />
+            <img src={Cecilion} alt="MLBB artwork" data-aos="fade" className="mw-100" />
           </Col>
           <Col sm="6">
             <h1>Mobile Legends: Bang Bang</h1>
@@ -113,7 +113,7 @@ export default function Registration() {
 
         <Row id="daftarPUBGM" className="py-5 justify-content-center align-items-center vh-100">
           <Col sm="6" className="mh-100">
-            <img src={PUBGLogo} alt="" data-aos="fade" className="mw-100" />
+            <img src={PUBGLogo} alt="PUBG artwork" data-aos="fade" className="mw-100" />
           </Col>
           <Col sm="6">
             <h1>PUBG Mobile</h1>
