@@ -6,13 +6,14 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
 import AOS from 'aos';
+import Footer from '../components/Footer';
 
 import { useState } from 'react';
 
 import MLBBLogo from '../images/mlbb-logo.webp';
 import ValorantLogo from '../images/valorant-logo.svg';
 import PUBGMLogo from '../images/pubgm-logo.webp';
-import Cecilion from '../images/Cecilion.webp';
+import MLBBArt from '../images/mlbb-art.webp';
 import ValorantArt from '../images/valorant-art.webp';
 import PUBGLogo from '../images/pubg-logo.webp';
 
@@ -68,18 +69,18 @@ export default function Registration() {
 
         {/* GAME BUTTONS */}
         <h1 className="text-center pt-5">Games</h1>
-        <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center pt-4 pb-5">
-          <Col lg="2" data-aos="fade-up">
+        <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center pt-4 pb-5" data-aos="fade-up">
+          <Col lg="2">
             <Button variant="outline-accent bg-body w-100" as="a" href="#daftarValorant">
               <img src={ValorantLogo} alt="Valorant Logo" className="w-100" />
             </Button>
           </Col>
-          <Col lg="2" data-aos="fade-up">
+          <Col lg="2">
             <Button variant="outline-accent bg-body w-100" as="a" href="#daftarMLBB">
               <img src={MLBBLogo} alt="MLBB Logo" className="w-100"/>
             </Button>
           </Col>
-          <Col lg="2" data-aos="fade-up">
+          <Col lg="2">
             <Button variant="outline-accent bg-body w-100 h-100" as="a" href="#daftarPUBGM">
               <img src={PUBGMLogo} alt="PUBGM Logo" className="w-100 h-100"/>
             </Button>
@@ -87,41 +88,48 @@ export default function Registration() {
         </Row>
         
         {/* FORM BUTTONS */}
-        <Row id="daftarValorant" className="py-5 justify-content-center align-items-center vh-100">
-          <Col sm="6" className="">
-            <img src={ValorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
-          </Col>
-          <Col sm="6">
-            <h1>Valorant</h1>
-            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
-            <Button variant="accent" size="lg" onClick={() => setShowValorantForm(true)}>Daftar</Button>
-          </Col>
-        </Row>
+        <div className="formulir-pendaftaran">
+          
+          <Row id="daftarValorant" className="py-5 justify-content-center align-items-center">
+            <Col md="6" className="d-flex justify-content-center">
+              <img src={ValorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
+            </Col>
+            <Col md="6">
+              <h1>Valorant</h1>
+              <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+              <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
+              <Button variant="accent" size="lg" onClick={() => setShowValorantForm(true)}>Daftar</Button>
+            </Col>
+          </Row>
 
-        <Row id="daftarMLBB" className="py-5 justify-content-center align-items-center vh-100">
-          <Col sm="6" className="">
-            <img src={Cecilion} alt="MLBB artwork" data-aos="fade" className="mw-100" />
-          </Col>
-          <Col sm="6">
-            <h1>Mobile Legends: Bang Bang</h1>
-            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-            <Button variant="accent" size="lg" onClick={() => setShowMLBBForm(true)}>Daftar</Button>
-          </Col>
-        </Row>
+          <hr />
 
-        <Row id="daftarPUBGM" className="py-5 justify-content-center align-items-center vh-100">
-          <Col sm="6" className="mh-100">
-            <img src={PUBGLogo} alt="PUBG artwork" data-aos="fade" className="mw-100" />
-          </Col>
-          <Col sm="6">
-            <h1>PUBG Mobile</h1>
-            <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-            <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-            <Button variant="accent" size="lg" onClick={() => setShowPUBGMForm(true)}>Daftar</Button>
-          </Col>
-        </Row>
+          <Row id="daftarMLBB" className="py-5 justify-content-center align-items-center">
+            <Col md="6" className="">
+              <img src={MLBBArt} alt="MLBB artwork" data-aos="fade" className="mw-100" />
+            </Col>
+            <Col md="6">
+              <h1>Mobile Legends: Bang Bang</h1>
+              <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+              <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+              <Button variant="accent" size="lg" onClick={() => setShowMLBBForm(true)}>Daftar</Button>
+            </Col>
+          </Row>
+
+          <hr />
+
+          <Row id="daftarPUBGM" className="py-5 justify-content-center align-items-center">
+            <Col md="6" className="">
+              <img src={PUBGLogo} alt="PUBG artwork" data-aos="fade" className="mw-100"/>
+            </Col>
+            <Col md="6">
+              <h1>PUBG Mobile</h1>
+              <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+              <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+              <Button variant="accent" size="lg" onClick={() => setShowPUBGMForm(true)}>Daftar</Button>
+            </Col>
+          </Row>
+        </div>
 
         {/* FORM MODALS */}
         {/* VALORANT */}
@@ -168,6 +176,8 @@ export default function Registration() {
       </Modal>
 
       </Container>
+
+      <Footer />
     </div> 
   )
 }
