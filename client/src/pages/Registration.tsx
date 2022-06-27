@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
-import Modal from 'react-bootstrap/Modal';
 import AOS from 'aos';
 import Footer from '../components/Footer';
 
@@ -21,12 +20,6 @@ import PUBGLogo from '../images/pubg-logo.webp';
 export default function Registration() {
 
   const [collapseAturanPendaftaran, setOpenCollapseAturanPendaftaran] = useState(true);
-
-  //Modal Pendaftaran
-  const [showValorantForm, setShowValorantForm] = useState(false);
-  const [showMLBBForm, setShowMLBBForm] = useState(false);
-  const [showPUBGMForm, setShowPUBGMForm] = useState(false);
-
 
   return (
     <div className="Registration">
@@ -98,7 +91,7 @@ export default function Registration() {
               <h1>Valorant</h1>
               <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
               <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
-              <Button variant="accent" size="lg" onClick={() => setShowValorantForm(true)}>Daftar</Button>
+              <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
             </Col>
           </Row>
 
@@ -112,7 +105,7 @@ export default function Registration() {
               <h1>Mobile Legends: Bang Bang</h1>
               <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
               <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-              <Button variant="accent" size="lg" onClick={() => setShowMLBBForm(true)}>Daftar</Button>
+              <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
             </Col>
           </Row>
 
@@ -126,54 +119,10 @@ export default function Registration() {
               <h1>PUBG Mobile</h1>
               <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
               <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-              <Button variant="accent" size="lg" onClick={() => setShowPUBGMForm(true)}>Daftar</Button>
+              <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
             </Col>
           </Row>
         </div>
-
-        {/* FORM MODALS */}
-        {/* VALORANT */}
-      <Modal
-        fullscreen={true}
-        show={showValorantForm}
-        onHide={() => setShowValorantForm(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
-        <Modal.Header closeButton className="border-bottom border-dark">
-          <h1 className="text-dark">Formulir Valorant</h1>
-        </Modal.Header>
-        <Modal.Body className="text-center">
-          <iframe title="ValorantForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
-        </Modal.Body>
-      </Modal>
-
-      <Modal
-        fullscreen={true}
-        show={showMLBBForm}
-        onHide={() => setShowMLBBForm(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
-        <Modal.Header closeButton className="border-bottom border-dark">
-          <h1 className="text-dark">Formulir MLBB</h1>
-        </Modal.Header>
-        <Modal.Body className="text-center">
-          <iframe title="MLBBForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
-        </Modal.Body>
-      </Modal>
-
-      <Modal
-        fullscreen={true}
-        show={showPUBGMForm}
-        onHide={() => setShowPUBGMForm(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
-        <Modal.Header closeButton className="border-bottom border-dark">
-          <h1 className="text-dark">Formulir PUBGM</h1>
-        </Modal.Header>
-        <Modal.Body className="text-center">
-          <iframe title="PUBGMForm" src="https://docs.google.com/forms/d/e/1FAIpQLScskNyExpsMkhymOYGViRSRfsIXROp4kzrlrNcvqfO3Jhto4A/viewform?embedded=true" width="100%" height="100%"></iframe>
-        </Modal.Body>
-      </Modal>
 
       </Container>
 
