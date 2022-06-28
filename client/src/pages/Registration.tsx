@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import AOS from 'aos';
-import Footer from '../components/Footer';
 
 import { useState } from 'react';
 
@@ -127,8 +126,6 @@ export default function Registration() {
           </div>
         </section>
       </Container>
-
-      <Footer />
     </main> 
   )
 }
