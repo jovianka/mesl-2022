@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Registration from './pages/Registration';
 import Info from './pages/Info';
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
 import AOS from 'aos';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/registration" element={<Registration/>} />
         <Route path="/info" element={<Info />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
