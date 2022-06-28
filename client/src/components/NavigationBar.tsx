@@ -27,9 +27,9 @@ export default function NavigationBar() {
           <Nav className="ms-auto align-items-center">
             <Nav.Link as={ NavLink } to="/" className={ navLinkState }>Home</Nav.Link>
             <Nav.Link as={ NavLink } to="/info" className={ navLinkState }>Info</Nav.Link>
-            <Nav.Link as={ NavLink } to="/registration" className={ navLinkState }>
+            <Nav.Link as={ NavLink } to="/registrasi" className={ navLinkState }>
               <Button variant="accent">
-                Registration
+                Registrasi
               </Button>
             </Nav.Link>
           </Nav>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Home from './pages/Home';
-import Registration from './pages/Registration';
+import Registrasi from './pages/Registrasi';
 import Info from './pages/Info';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
@@ -22,7 +22,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/registration" element={<Registration/>} />
+        <Route path="/registrasi" element={<Registrasi/>} />
         <Route path="/info" element={<Info />} />
       </Routes>
       <Footer />

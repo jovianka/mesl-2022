@@ -16,12 +16,12 @@ import ValorantArt from '../images/valorant-art.webp';
 import PUBGLogo from '../images/pubg-logo.webp';
 
 
-export default function Registration() {
+export default function Registrasi() {
 
   const [collapseAturanPendaftaran, setOpenCollapseAturanPendaftaran] = useState(true);
 
   return (
-    <main className="Registration">
+    <main className="Registrasi">
       <Container>
         {/* ATURAN PENDAFTARAN */}
         <section className="aturan-pendaftaran">
@@ -92,7 +92,7 @@ export default function Registration() {
                 <h2 className="h1">Valorant</h2>
                 <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
                 <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
-                <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
+                <Button variant="accent" size="lg" as="a" href="">Daftar Lomba Valorant</Button>
               </Col>
             </Row>
 
@@ -106,7 +106,7 @@ export default function Registration() {
                 <h2 className="h1">Mobile Legends: Bang Bang</h2>
                 <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
                 <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-                <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
+                <Button variant="accent" size="lg" as="a" href="">Daftar Lomba MLBB</Button>
               </Col>
             </Row>
 
@@ -120,7 +120,7 @@ export default function Registration() {
                 <h2 className="h1">PUBG Mobile</h2>
                 <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
                 <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-                <Button variant="accent" size="lg" as="a" href="">Daftar</Button>
+                <Button variant="accent" size="lg" as="a" href="">Daftar Lomba PUBG Mobile</Button>
               </Col>
             </Row>
           </div>
