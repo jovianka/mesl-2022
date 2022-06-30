@@ -13,3 +13,17 @@ ul li:not(:nth-last-child(1)) {
 ol li:not(:nth-last-child(1)) {
   padding-bottom: $spacer;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 4px;
+}
