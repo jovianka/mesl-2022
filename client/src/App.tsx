@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Registrasi from './pages/Registrasi';
 import Info from './pages/Info';
 import NavigationBar from './components/NavigationBar';
+import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/registrasi" element={<Registrasi/>} />
         <Route path="/info" element={<Info />} />
       </Routes>
+      <Sponsors />
       <Footer />
     </div>
   );
