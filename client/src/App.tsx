@@ -15,7 +15,9 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration : 1000,
+      startEvent: 'DOMContentLoaded',
     });
+    setTimeout(() => AOS.refresh(), 100)
   }, []);
 
   return (
