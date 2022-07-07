@@ -11,7 +11,7 @@ export default function NavigationBar() {
   const [navLinkState, setNavLinkState] = useState("");
 
   useEffect(() => {
-    setNavLinkState(`${({ isActive }: {isActive: any}) => isActive ? "active" : ""}`);
+    setNavLinkState(`${ ({ isActive }: {isActive: any}) => isActive ? "active" : ""}`);
   }, [navLinkState]);
   
 

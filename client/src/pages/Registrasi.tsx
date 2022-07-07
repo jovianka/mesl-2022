@@ -8,12 +8,12 @@ import AOS from 'aos';
 
 import { useState } from 'react';
 
-import MLBBLogo from '../images/mlbb-logo.webp';
-import ValorantLogo from '../images/valorant-logo.svg';
-import PUBGMLogo from '../images/pubgm-logo.webp';
-import MLBBArt from '../images/mlbb-art.webp';
-import ValorantArt from '../images/valorant-art.webp';
-import PUBGLogo from '../images/pubg-logo.webp';
+import mlbbLogo from '../images/mlbb-logo.webp';
+import valorantLogo from '../images/valorant-logo.svg';
+import pubgmLogo from '../images/pubgm-logo.webp';
+import mlbbArt from '../images/mlbb-art.webp';
+import valorantArt from '../images/valorant-art.webp';
+import pubgLogo from '../images/pubg-logo.webp';
 
 
 export default function Registrasi() {
@@ -62,40 +62,51 @@ export default function Registrasi() {
           </Row>
         </section>
 
-        <hr />
 
         <section className="lomba">
           {/* GAME BUTTONS */}
-          <h1 className="text-center pt-5">Games</h1>
-          <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center pt-4 pb-5" data-aos="fade-up">
-            <Col lg="2">
+          <h1 className="text-center mt-5">Games</h1>
+          <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center py-5" data-aos="fade-up">
+            <Col lg="3">
               <Button variant="outline-accent rounded-circle" as="a" href="#daftarValorant">
-                <img src={ValorantLogo} alt="Valorant Logo" className="w-100" />
+                <img src={valorantLogo} alt="Valorant Logo" className="w-100" />
               </Button>
             </Col>
-            <Col lg="2">
+            <Col lg="3">
               <Button variant="outline-accent rounded-circle" as="a" href="#daftarMLBB">
-                <img src={MLBBLogo} alt="MLBB Logo" className="w-100"/>
+                <img src={mlbbLogo} alt="MLBB Logo" className="w-100"/>
               </Button>
             </Col>
-            <Col lg="2">
+            <Col lg="3">
               <Button variant="outline-accent rounded-circle" as="a" href="#daftarPUBGM">
-                <img src={PUBGMLogo} alt="PUBGM Logo" className="w-100"/>
+                <img src={pubgmLogo} alt="PUBGM Logo" className="w-100"/>
               </Button>
             </Col>
           </Row>
-          
+
+
           {/* FORM BUTTONS */}
           <div className="formulir-pendaftaran">
             
             <div id="daftarValorant" className="py-5">
-              <Row className="justify-content-center">
+              <Row className="justify-content-center align-items-center">
+                <Col md="6" className="d-flex justify-content-center">
+                  <img src={valorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
+                </Col>
+                <Col md="6">
+                  <h2 className="h1">Valorant</h2>
+                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
+                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba Valorant</Button>
+                </Col>
+              </Row>
+              <Row className="justify-content-center mt-5">
                 <Col sm="10">
                   <Card border="secondary" bg="dark" className="p-3">
                     <Button className="w-100" onClick={() => {
-                      setOpenCollapseAturanValorant(!collapseAturanValorant);
-                      setTimeout(() => AOS.refresh(), 500);
-                    }
+                        setOpenCollapseAturanValorant(!collapseAturanValorant);
+                        setTimeout(() => AOS.refresh(), 500);
+                      }
                     }>
                       <Card.Header className="d-flex justify-content-center align-items-center">
                         <h1 className="text-center">Aturan Valorant</h1>
@@ -120,29 +131,28 @@ export default function Registrasi() {
                   </Card>
                 </Col>
               </Row>
-              <Row className="justify-content-center align-items-center">
-                <Col md="6" className="d-flex justify-content-center">
-                  <img src={ValorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
-                </Col>
-                <Col md="6">
-                  <h2 className="h1">Valorant</h2>
-                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp120.000</p>
-                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba Valorant</Button>
-                </Col>
-              </Row>
             </div>
 
-            <hr />
 
             <div id="daftarMLBB" className="py-5">
-              <Row className="justify-content-center">
+              <Row className="justify-content-center align-items-center">
+                <Col md="6" className="">
+                  <img src={mlbbArt} alt="MLBB artwork" data-aos="fade" className="mw-100" />
+                </Col>
+                <Col md="6">
+                  <h2 className="h1">Mobile Legends: Bang Bang</h2>
+                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba MLBB</Button>
+                </Col>
+              </Row>
+              <Row className="justify-content-center mt-5">
                 <Col sm="10">
                   <Card border="secondary" bg="dark" className="p-3">
                     <Button className="w-100" onClick={() => {
-                      setOpenCollapseAturanMLBB(!collapseAturanMLBB);
-                      setTimeout(() => AOS.refresh(), 500);
-                    }
+                        setOpenCollapseAturanMLBB(!collapseAturanMLBB);
+                        setTimeout(() => AOS.refresh(), 500);
+                      }
                     }>
                       <Card.Header className="d-flex justify-content-center align-items-center">
                         <h1 className="text-center">Aturan MLBB</h1>
@@ -167,29 +177,28 @@ export default function Registrasi() {
                   </Card>
                 </Col>
               </Row>
-              <Row className="justify-content-center align-items-center">
-                <Col md="6" className="">
-                  <img src={MLBBArt} alt="MLBB artwork" data-aos="fade" className="mw-100" />
-                </Col>
-                <Col md="6">
-                  <h2 className="h1">Mobile Legends: Bang Bang</h2>
-                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba MLBB</Button>
-                </Col>
-              </Row>
             </div>
 
-            <hr />
 
             <div id="daftarPUBGM" className="py-5">
-              <Row className="justify-content-center">
+              <Row className="justify-content-center align-items-center">
+                <Col md="6" className="">
+                  <img src={pubgLogo} alt="PUBG artwork" data-aos="fade" className="mw-100"/>
+                </Col>
+                <Col md="6">
+                  <h2 className="h1">PUBG Mobile</h2>
+                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
+                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
+                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba PUBG Mobile</Button>
+                </Col>
+              </Row>
+              <Row className="justify-content-center mt-5">
                 <Col sm="10">
                   <Card border="secondary" bg="dark" className="p-3">
                     <Button className="w-100" onClick={() => {
-                      setOpenCollapseAturanPUBGM(!collapseAturanPUBGM);
-                      setTimeout(() => AOS.refresh(), 500);
-                    }
+                        setOpenCollapseAturanPUBGM(!collapseAturanPUBGM);
+                        setTimeout(() => AOS.refresh(), 500);
+                      }
                     }>
                       <Card.Header className="d-flex justify-content-center align-items-center">
                         <h1 className="text-center">Aturan PUBGM</h1>
@@ -214,18 +223,8 @@ export default function Registrasi() {
                   </Card>
                 </Col>
               </Row>
-              <Row className="justify-content-center align-items-center">
-                <Col md="6" className="">
-                  <img src={PUBGLogo} alt="PUBG artwork" data-aos="fade" className="mw-100"/>
-                </Col>
-                <Col md="6">
-                  <h2 className="h1">PUBG Mobile</h2>
-                  <p>(Match Description)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, consequatur! Nesciunt reprehenderit fuga nihil nisi molestias fugit animi recusandae ea.</p>
-                  <p className="fs-5 fst-italic">Biaya Pendaftaran: Rp70.000</p>
-                  <Button variant="accent" size="lg" as="a" href="">Daftar Lomba PUBG Mobile</Button>
-                </Col>
-              </Row>
             </div>
+
 
           </div>
         </section>
