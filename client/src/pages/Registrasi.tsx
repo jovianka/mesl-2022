@@ -27,8 +27,8 @@ export default function Registrasi() {
     <main className="Registrasi">
       <Container>
         {/* ATURAN PENDAFTARAN */}
-        <section className="aturan-pendaftaran">
-          <Row className="justify-content-center py-5">
+        <section className="aturan-pendaftaran py-5 my-5">
+          <Row className="justify-content-center">
             <Col sm="10">
               <Card border="secondary" bg="dark" className="p-3">
                 <Button className="w-100" onClick={() => {
@@ -63,9 +63,9 @@ export default function Registrasi() {
         </section>
 
 
-        <section className="lomba">
+        <section className="lomba my-5">
           {/* GAME BUTTONS */}
-          <h1 className="text-center mt-5">Games</h1>
+          <h1 className="text-center">Games</h1>
           <Row className="row-cols-2 row-cols-sm-3 gy-3 justify-content-center py-5" data-aos="fade-up">
             <Col lg="3">
               <Button variant="outline-accent rounded-circle" as="a" href="#daftarValorant">
@@ -88,7 +88,7 @@ export default function Registrasi() {
           {/* FORM BUTTONS */}
           <div className="formulir-pendaftaran">
             
-            <div id="daftarValorant" className="py-5">
+            <div id="daftarValorant" className="py-5 my-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="d-flex justify-content-center">
                   <img src={valorantArt} alt="Valorant artwork" data-aos="fade" className="mw-100" />
@@ -134,7 +134,7 @@ export default function Registrasi() {
             </div>
 
 
-            <div id="daftarMLBB" className="py-5">
+            <div id="daftarMLBB" className="py-5 my-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="">
                   <img src={mlbbArt} alt="MLBB artwork" data-aos="fade" className="mw-100" />
@@ -180,7 +180,7 @@ export default function Registrasi() {
             </div>
 
 
-            <div id="daftarPUBGM" className="py-5">
+            <div id="daftarPUBGM" className="py-5 mt-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="">
                   <img src={pubgLogo} alt="PUBG artwork" data-aos="fade" className="mw-100"/>
