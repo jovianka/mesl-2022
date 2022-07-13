@@ -44,7 +44,7 @@ ol li:not(:nth-last-child(1)) {
   border-radius: 0.3rem;
 }
 
-.sponsors-link:hover {
+.sponsors-link:is(:hover, :active) {
   background-color: $secondary;
   filter: none;
 }
