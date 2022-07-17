@@ -1,14 +1,20 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
+
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+
+import { useState } from 'react';
+
 import mlbbLogo from '../images/mlbb-logo.webp';
 import valorantLogo from '../images/valorant-logo.svg';
 import pubgmLogo from '../images/pubgm-logo.webp';
+
 
 export default function Home() {
 
@@ -28,7 +34,6 @@ export default function Home() {
             alt="First slide"
           />
         </Carousel.Item>
-
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -36,7 +41,6 @@ export default function Home() {
             alt="Second slide"
           />
         </Carousel.Item>
-        
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -45,42 +49,46 @@ export default function Home() {
           />
         </Carousel.Item>
       </Carousel>
-
       <Container className="py-3 overflow-hidden">
         <Row className="justify-content-center my-5">
           <h1 className="w-auto text-center">Marsudirini E-sports League 2022</h1>
-          <iframe className="trailerIframe my-4" src="https://www.youtube.com/embed/zf9tBzm99PA" title="EVERY Oi in The Boys (Seasons 1-3)" frameBorder="0" allowFullScreen></iframe>
+          <iframe className="trailerIframe my-4" src="https://www.youtube.com/embed/tcrNsIaQkb4" title="The Boys - Final Trailer | Prime Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <p>Marsudirini E-Sport League 2022: ARCADE kembali menghadirkan perlombaan e-sport bagi para pelajar pada jenjang SMP dan SMA untuk menyalurkan bakatnya dengan dilandasi semangat berkompetisi. Perlombaan terbagi menjadi 3 cabang lomba yakni Mobile Legends: Bang Bang, PUBG Mobile, dan Valorant serta dilaksanakan secara daring/online dan luring/offline di area Gedung Serbaguna Marsudirini Bekasi. </p>
           <p>Serangkaian acara Marsudirini E-Sport League 2022: ARCADE akan dimulai pada 17 Oktober 2022 dan berakhir pada 22 Oktober 2022. Tema kegiatan yang kami angkat yakni berjudul “ARCADE”. Arcade adalah area atau wadah di mana ada banyak permainan elektronik atau permainan yang dioperasikan dengan koin untuk umum. Dengan demikian, ada harapan bahwa Marsudirini E-Sport League 2022 menjadi wadah bagi siswa-siswi yang memiliki ketertarikan di bidang e-sport dalam mengeluarkan bakatnya.</p>
-          <Link to="/registrasi" className="w-auto">
-            <Button variant="accent" size="lg" className="w-auto">Daftar Sekarang!</Button>
-          </Link>
+          <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada" className="w-100 text-center">
+            <Link to="/registrasi" className="w-auto">
+              <Button variant="accent" size="lg" className="w-auto">Daftar Sekarang!</Button>
+            </Link>
+          </AnimationOnScroll>
         </Row>
-        <Row className="gy-3 justify-content-center">
+        <Row className="gy-3 justify-content-center align-items-center">
           <Col md="4">
             <Card className="align-items-center bg-dark">
-              <Card.Img src={valorantLogo} alt="Valorant Logo" className="w-75" />
-              <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse" className="w-100 text-center">
+                <Card.Img src={valorantLogo} alt="Valorant Logo" className="w-75" />
+                <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              </AnimationOnScroll>
             </Card>
             <hr />
           </Col>
-
           <Col md="4">
             <Card className="align-items-center bg-dark">
-              <Card.Img src={mlbbLogo} alt="MLBB Logo" className="w-75" />
-              <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse" className="w-100 text-center">
+                <Card.Img src={mlbbLogo} alt="MLBB Logo" className="w-75" />
+                <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              </AnimationOnScroll>
             </Card>
             <hr />
           </Col>
-
           <Col md="4">
             <Card className="align-items-center bg-dark">
-              <Card.Img src={pubgmLogo} alt="PUBGM Logo" className="w-75" />
-              <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse" className="w-100 text-center">
+                <Card.Img src={pubgmLogo} alt="PUBGM Logo" className="w-75" />
+                <Card.Title className="text-center">Prize Pool: $40.018.195</Card.Title>
+              </AnimationOnScroll>
             </Card>
             <hr />
           </Col>
-
         </Row>
       </Container>
 

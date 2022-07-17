@@ -4,8 +4,8 @@
 @import "bootstrap/scss/functions";
 
 $primary:       #141414;
-$secondary:     #ebebeb ;
-$light:         #ebebeb ;
+$secondary:     #232323 ;
+$light:         #b6b6b6 ;
 $dark:          #141414 ;
 $body-bg:         $dark;
 $body-color:      rgba(255, 255, 255, .60);
@@ -23,7 +23,7 @@ $headings-color:              rgba(255, 255, 255, 0.82);
 @import "bootstrap/scss/utilities";
 
 $custom-colors: (
-  "accent": #A43535,
+  "accent": $red-700,
 );
 
 

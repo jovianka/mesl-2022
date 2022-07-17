@@ -1,3 +1,5 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -5,7 +7,8 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
-import { useState, useEffect } from 'react';
+
+import { useState } from 'react';
 
 import mlbbLogo from '../images/mlbb-logo.webp';
 import valorantLogo from '../images/valorant-logo.svg';
@@ -29,9 +32,9 @@ export default function Registrasi() {
         <section className="aturan-pendaftaran my-5 pb-4">
           <Row className="justify-content-center">
             <Col sm="12">
-              <Card border="secondary" bg="dark" className="p-3">
-                <Button className="w-100" onClick={() => setOpenCollapseAturanPendaftaran(!collapseAturanPendaftaran)}>
-                  <Card.Header className="d-flex justify-content-center align-items-center">
+              <Card bg="secondary" className="p-3">
+                <Button variant="secondary" className="w-100" onClick={() => setOpenCollapseAturanPendaftaran(!collapseAturanPendaftaran)}>
+                  <Card.Header className="border-none d-flex justify-content-center align-items-center">
                     <h1 className="text-center">Aturan Pendaftaran</h1>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
                         <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
@@ -86,7 +89,9 @@ export default function Registrasi() {
             <div id="daftarValorant" className="mt-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="d-flex justify-content-center">
-                  <img src={valorantArt} alt="Valorant artwork" className="mw-100" />
+                  <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse">
+                    <img src={valorantArt} alt="Valorant artwork" className="mw-100" />
+                  </AnimationOnScroll>
                 </Col>
                 <Col md="6">
                   <h2>Valorant</h2>
@@ -97,9 +102,9 @@ export default function Registrasi() {
               </Row>
               <Row className="justify-content-center mt-4">
                 <Col sm="12">
-                  <Card border="secondary" bg="dark" className="p-3">
-                    <Button className="w-100" onClick={() => setOpenCollapseAturanValorant(!collapseAturanValorant)}>
-                      <Card.Header className="d-flex justify-content-center align-items-center">
+                  <Card bg="secondary" className="p-3">
+                    <Button variant="secondary" className="w-100" onClick={() => setOpenCollapseAturanValorant(!collapseAturanValorant)}>
+                      <Card.Header className="border-0 d-flex justify-content-center align-items-center">
                         <h2 className="text-center">Aturan Valorant</h2>
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
                             <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
@@ -128,7 +133,9 @@ export default function Registrasi() {
             <div id="daftarMLBB" className="mt-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="">
-                  <img src={mlbbArt} alt="MLBB artwork" className="mw-100" />
+                  <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse">
+                    <img src={mlbbArt} alt="MLBB artwork" className="mw-100" />
+                  </AnimationOnScroll>
                 </Col>
                 <Col md="6">
                   <h2>Mobile Legends: Bang Bang</h2>
@@ -139,9 +146,9 @@ export default function Registrasi() {
               </Row>
               <Row className="justify-content-center mt-4">
                 <Col sm="12">
-                  <Card border="secondary" bg="dark" className="p-3">
-                    <Button className="w-100" onClick={() => setOpenCollapseAturanMLBB(!collapseAturanMLBB)}>
-                      <Card.Header className="d-flex justify-content-center align-items-center">
+                  <Card bg="secondary" className="p-3">
+                    <Button variant="secondary" className="w-100" onClick={() => setOpenCollapseAturanMLBB(!collapseAturanMLBB)}>
+                      <Card.Header className="border-0 d-flex justify-content-center align-items-center">
                         <h2 className="text-center">Aturan MLBB</h2>
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
                             <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
@@ -170,7 +177,9 @@ export default function Registrasi() {
             <div id="daftarPUBGM" className="mt-5">
               <Row className="justify-content-center align-items-center">
                 <Col md="6" className="">
-                  <img src={pubgLogo} alt="PUBG artwork" className="mw-100"/>
+                  <AnimationOnScroll initiallyVisible={true} animateIn="animate__pulse">
+                    <img src={pubgLogo} alt="PUBG artwork" className="mw-100"/>
+                  </AnimationOnScroll>
                 </Col>
                 <Col md="6">
                   <h2>PUBG Mobile</h2>
@@ -181,9 +190,9 @@ export default function Registrasi() {
               </Row>
               <Row className="justify-content-center mt-4">
                 <Col sm="12">
-                  <Card border="secondary" bg="dark" className="p-3">
-                    <Button className="w-100" onClick={() => setOpenCollapseAturanPUBGM(!collapseAturanPUBGM)}>
-                      <Card.Header className="d-flex justify-content-center align-items-center">
+                  <Card bg="secondary" className="p-3">
+                    <Button variant="secondary" className="w-100" onClick={() => setOpenCollapseAturanPUBGM(!collapseAturanPUBGM)}>
+                      <Card.Header className="border-0 d-flex justify-content-center align-items-center">
                         <h2 className="text-center">Aturan PUBGM</h2>
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-caret-down ms-2" viewBox="0 0 16 16">
                             <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
