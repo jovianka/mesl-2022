@@ -7,21 +7,23 @@ import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useLocation } from "react-router-dom";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => { window.scroll(0, 0);}, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration : 1000,
-      startEvent: 'DOMContentLoaded',
-    });
-    setTimeout(() => AOS.refresh(), 100)
-  }, []);
 
   return (
     <div className="App">
+      <ScrollToTop />
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
