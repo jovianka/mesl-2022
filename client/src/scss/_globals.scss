@@ -28,10 +28,6 @@ ol li:not(:nth-last-child(1)) {
   border-radius: 4px;
 }
 
-.sponsors-container {
-  height: 15vmax;
-}
-
 .sponsors-link {
   display: flex;
   justify-content: center;
@@ -53,4 +49,14 @@ ol li:not(:nth-last-child(1)) {
   max-width: 75%;
   max-height: 50%;
   transition: all .2s ease 0s;
+}
+
+.carousel-item img {
+  max-height: 100vh;
+}
+
+.trailerIframe {
+  max-width: 800px;
+  max-height: 450px;
+  aspect-ratio: 16 / 9;
 }
