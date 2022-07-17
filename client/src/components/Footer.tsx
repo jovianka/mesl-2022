@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-top py-2 text-muted mt-5">
       <Navbar bg="dark" variant="dark">
         <Container className="d-flex flex-column flex-sm-row justify-content-between align-items-center">
-          <span>Copyright &copy; 2022 Panitia MESL 2022</span>
+          <span>Copyright &copy; 2022 Panitia MESL '22</span>
           <Nav className="social-links">
             <Nav.Link href="instagram.com" className="p-2 ">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
