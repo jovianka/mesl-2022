@@ -7,13 +7,14 @@ import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
+import 'animate.css/animate.min.css';
 import { useLocation } from "react-router-dom";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    setTimeout(() => { window.scroll(0, 0);}, 0);
+    setTimeout(() => { window.scrollTo(0, 0) }, 0);
   }, [pathname]);
 
   return null;

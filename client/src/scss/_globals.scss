@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top: $spacer * 3
+  scroll-padding-top: $spacer * 3;
 }
 
 h1, h2, h3, h4, h5, h6, .NavigationBar {
@@ -28,20 +28,24 @@ ol li:not(:nth-last-child(1)) {
   border-radius: 4px;
 }
 
+.sponsors-container {
+  aspect-ratio: 16 / 10;
+}
+
 .sponsors-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #dbdbdb;
+  background-color: #ebebeb;
   transition: all .2s ease 0s;
   filter: grayscale(1) invert(1);
   border-radius: 0.3rem;
 }
 
 .sponsors-link:is(:hover, :active) {
-  background-color: $secondary;
+  // background-color: #f0f0f0;
   filter: none;
 }
 
