@@ -41,11 +41,11 @@ ol li:not(:nth-last-child(1)) {
   background-color: #ebebeb;
   transition: all .2s ease 0s;
   filter: grayscale(1) invert(1);
+  border: 1px solid #b6b6b6;
   border-radius: 0.3rem;
 }
 
 .sponsors-link:is(:hover, :active) {
-  // background-color: #f0f0f0;
   filter: none;
 }
 

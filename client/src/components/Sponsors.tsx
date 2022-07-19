@@ -14,22 +14,22 @@ function Sponsors() {
       <Container>
           <Row className="g-3 row-cols-2 row-cols-md-4">
             <Col className="justify-content-center sponsors-container">
-              <a href="/registrasi" className="sponsors-link border border-light">
+              <a href="/registrasi" className="sponsors-link">
                 <img src={google} alt="Google Logo" className="sponsors-image" />
               </a>
             </Col>
             <Col className="justify-content-center sponsors-container">
-              <a href="/registrasi" className="sponsors-link border border-light">
+              <a href="/registrasi" className="sponsors-link">
                 <img src={googleLogo} alt="Google Logo" className="sponsors-image" />
               </a>
             </Col>
             <Col className="justify-content-center sponsors-container">
-              <a href="/registrasi" className="sponsors-link border border-light">
+              <a href="/registrasi" className="sponsors-link">
                 <img src={google} alt="Google Logo" className="sponsors-image" />
               </a>
             </Col>
             <Col className="justify-content-center sponsors-container">
-              <a href="/registrasi" className="sponsors-link border border-light">
+              <a href="/registrasi" className="sponsors-link">
                 Your Logo
               </a>
             </Col>
